@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <RuntimeHostConfigurationOption Include="System.Drawing.EnableUnixSupport" Value="true" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FastReport.OpenSource" Version="2023.1.12" />
+    <PackageReference Include="FastReport.OpenSource.Export.PdfSimple" Version="2023.1.12" />
+    <PackageReference Include="FastReport.OpenSource.Web" Version="2023.1.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RelatorioFR.Domain\RelatorioFR.Core.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
